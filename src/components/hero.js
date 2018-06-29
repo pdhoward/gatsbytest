@@ -11,7 +11,9 @@ export default ({ person }) => (
     <div className={styles.heroDetails}>
       <h3 className={styles.heroHeadline}>{person.node.name}</h3>
       <p className={styles.heroTitle}>{person.node.title}</p>
+      <p className={styles.heroTitle}>{person.node.company}</p>
       <p>{person.node.shortBio.shortBio}</p>
+      <p>{person.node.twitter}</p>
     </div>
   </div>
 )
